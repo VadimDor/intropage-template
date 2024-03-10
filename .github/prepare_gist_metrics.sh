@@ -14,8 +14,19 @@ echo "Project Name: $name";
 echo "Project URL name: $urlname";
 echo "Description: $description";
 
-echo "Preparing gist..."
+YOUR_TOKEN=$GH_TOKEN
+echo "YOUR_TOKEN: $YOUR_TOKEN";
 
+echo "Preparing gist...  ($github.token)"
+
+curl -L \
+  -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer $YOUR_TOKEN" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  https://api.github.com/gists \
+  -d '{"description":"Example of a gist","public":false,"files":{"README.md":{"content":"Hello World"}}}'
+  
 gh api \
   --method PUT \
   -H "Accept: application/vnd.github+json" \
