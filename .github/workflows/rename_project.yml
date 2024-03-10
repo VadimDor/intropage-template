@@ -1,6 +1,7 @@
 name: Rename the project from template
 
-on: [push]
+# workflow_dispatch allows you to run this workflow manually from the Actions tab
+on: [push, workflow_dispatch]
 
 permissions: write-all
 
