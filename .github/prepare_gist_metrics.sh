@@ -15,7 +15,12 @@ echo "Project URL name: $urlname";
 echo "Description: $description";
 
 YOUR_TOKEN=$GH_TOKEN
+echo "YOUR_TOKEN  : $YOUR_TOKEN";
+
+
+YOUR_TOKEN=$GISTTOKEN
 echo "YOUR_TOKEN: $YOUR_TOKEN";
+
 
 echo "Preparing gist...  ($github.token)"
 
