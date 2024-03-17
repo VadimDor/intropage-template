@@ -14,22 +14,20 @@
 
 # Hi there, I'm [author_name](https://github.com/author_name/)! <img src="assets/wave.gif" width="30px">
 
-#TODO:  I'm a ...specializing in ... with over ... years of expertise.
+>  I'm a ...specializing in ... 
+ with over ... years of expertise.
+
 > I'm particularly experienced with ...
+
 > I always love to ... 
 
 ![](assets/bottom-wave.svg)
 
-<p>
+<p align="center">
   <img src="https://komarev.com/ghpvc/?username=author_name&style=flat-square" alt="Profile Visits"> 
   <a href="https://github.com/author_name" target="_blank">
     <img alt="Follow on GitHub" src="https://img.shields.io/github/followers/author_name?label=Follow&style=social">
   </a>
-  <a href="https://twitter.com/author_name" target="_blank">
-    <img alt="Follow on Twitter" src="https://img.shields.io/twitter/follow/author_name?style=social">
-  </a>
-</p>
-<p align="center">
   <a href="https://twitter.com/author_name">
     <img align="center" alt="Twitter" src="https://img.shields.io/badge/Follow%20me%20on%20X-informational?style=flat&logo=x&logoColor=fff&color=grey">
   </a>
@@ -66,7 +64,7 @@ project_description
 
 ## 📌 Pinned Repositories
 
-[![Pin GitHub Repo, row 1, col 1](https://github-readme-stats.vercel.app/api/pin/?username=author_name&repo=project_name&theme=transparent)](https://github.com/author_name/project_name) [![Pin GitHub Repo, row 1, col 2](https://github-readme-stats.vercel.app/api/pin/?username=author_name&repo=pythproject_name&theme=transparent)](https://github.com/author_name/project_name)
+[![Pin GitHub Repo, row 1, col 1](https://github-readme-stats.vercel.app/api/pin/?username=author_name&repo=project_name&theme=transparent)](https://github.com/author_name/project_name) [![Pin GitHub Repo, row 1, col 2](https://github-readme-stats.vercel.app/api/pin/?username=author_name&repo=project_name&theme=transparent)](https://github.com/author_name/project_name)
 
 ## WakaTime Activity
 
@@ -76,11 +74,9 @@ project_description
   <img align="center" src="https://wakatime.com/share/@author_name/12345.svg" alt="author_name's WakaTime coding activity" />
 </p>
 
-## 📫 Connect with Me
+## 📫 Connect with Me 
 
-<a href="mailto:author_name@gmail.com" target="blank">
-  <span>Mail to me</span>
-</a>
+## <a href="mailto:author_name@gmail.com" target="blank"><span>Mail to me</span></a>
 
 ## 📈 My Activity Graph
 <table width="100%">
@@ -123,9 +119,8 @@ project_description
 </div>
 
 <!--  My Home -->
-<!-- https://geojson.io/#map=6.42/21.465/108.395 -->
-
-My Home: [Here I am](https://geojson.io/#map=6.42/21.465/108.395)
+ 
+My Home: [Here I am](https://geojson.io/#map=6.42/-15.23/167.129)
 
 ```geojson
 {
@@ -138,24 +133,24 @@ My Home: [Here I am](https://geojson.io/#map=6.42/21.465/108.395)
         "coordinates": [
           [
             [
-              108.30467402683973,
-              21.762728811955313
+              167.138,
+              -15.225
             ],
             [
-              108.30467402683973,
-              21.65592236473286
+              167.118,
+              -15.21
             ],
             [
-              108.41142290506804,
-              21.65592236473286
+              167.148,
+              -15.21
             ],
             [
-              108.41142290506804,
-              21.762728811955313
+              167.148,
+              -15.25
             ],
             [
-              108.30467402683973,
-              21.762728811955313
+              167.118,
+              -15.26
             ]
           ]
         ],
