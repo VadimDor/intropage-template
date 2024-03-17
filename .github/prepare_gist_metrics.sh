@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 while getopts a:n:u:d: flag
 do
+    # shellcheck disable=SC2220
     case "${flag}" in
         a) author=${OPTARG};;
         n) name=${OPTARG};;

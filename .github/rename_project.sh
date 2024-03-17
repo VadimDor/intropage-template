@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 while getopts a:n:u:d: flag
 do
+    # shellcheck disable=SC2220
     case "${flag}" in
         a) author=${OPTARG};;
         n) name=${OPTARG};;
@@ -23,10 +24,10 @@ original_description="project_description"
 # for filename in $(find . -name "*.*") 
 for filename in $(git ls-files) 
 do
-    sed -i "s/$original_author/$author/g" $filename
-    sed -i "s/$original_name/$name/g" $filename
-    sed -i "s/$original_urlname/$urlname/g" $filename
-    sed -i "s/$original_description/$description/g" $filename
+    sed -i "s/$original_author/$author/g" "$filename"
+    sed -i "s/$original_name/$name/g" "$filename"
+    sed -i "s/$original_urlname/$urlname/g" "$filename"
+    sed -i "s/$original_description/$description/g" "$filename"
     echo "Renamed $filename"
 done
 
