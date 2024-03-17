@@ -1,6 +1,3 @@
-
-<h2 align="center"><b>#TODO: write your moto here</b></h2>
-
 <!--  DELETE THE LINES BELOW THIS AFTER THIS TODO IS DONE -->
 #TODO: proceed with creation of TOKENS
  
@@ -8,10 +5,8 @@
 
 <!--  DELETE THE LINES ABOVE THIS AFTER THIS TODO IS DONE -->
 ---
-# project_name
-
 ![](assets/top-welcome.svg)
-
+<h2 align="center"><b>#TODO: write your moto here</b></h2>
 # Hi there, I'm [author_name](https://github.com/author_name/)! <img src="assets/wave.gif" width="30px">
 
 >  I'm a ...specializing in ... 
@@ -38,9 +33,6 @@
     <img align="center" alt="Instagram" src="https://img.shields.io/badge/Follow%20me%20on%20Instagram-informational?style=flat&logo=instagram&logoColor=E4405F&color=grey">
   </a>
 </p>
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%author_name%2Fproject_name.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%author_name%2Fproject_name?ref=badge_shield)
-[![CI](https://github.com/author_name/project_name/actions/workflows/main.yml/badge.svg)](https://github.com/author_name/project_name/actions/workflows/main.yml)
 
 project_description
  
@@ -159,7 +151,6 @@ My Home: [Here I am](https://geojson.io/#map=1.42/-15.23/167.129)
 ```
 
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%author_name%2Fproject_name.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%author_name%2Fproject_name?ref=badge_large)
 <!-- Resources -->
 <!-- Icons: https://simpleicons.org/ -->
 <!-- GitHub Stats: https://github.com/anuraghazra/github-readme-stats -->
