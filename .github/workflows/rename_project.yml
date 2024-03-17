@@ -9,6 +9,7 @@ jobs:
   rename-project:
     if: ${{ !contains (github.repository, '/python-project-template') }}
     runs-on: ubuntu-latest
+    permissions: write-all    
     steps:
       - uses: actions/checkout@v4
         with:
@@ -36,16 +37,30 @@ jobs:
           echo "Renaming the project with -a(author) ${{ env.REPOSITORY_OWNER }} -n(name) ${{ env.REPOSITORY_NAME }} -u(urlname) ${{ env.REPOSITORY_URLNAME }}"
           .github/rename_project.sh -a ${{ env.REPOSITORY_OWNER }} -n ${{ env.REPOSITORY_NAME }} -u ${{ env.REPOSITORY_URLNAME }} -d "Awesome ${{ env.REPOSITORY_NAME }} created by ${{ env.REPOSITORY_OWNER }}"
 
-      - name: Prepare gist as metrics holder
-        if: steps.is_template.outputs.is_template == 'true'
-        env:
-          GISTTOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Test gh api
         run: |
-          echo "Preparing gistt with -a(author) ${{ env.REPOSITORY_OWNER }} -n(name) ${{ env.REPOSITORY_NAME }} -u(urlname) ${{ env.REPOSITORY_URLNAME }}"
+          #echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
+          #gh api repos/${{ GITHUB.REPOSITORY }}/issues  --jq '.[].title'
+          #gh api -X GET /repos/${{ GITHUB.REPOSITORY }}/docs --jq='.names'
+          #gh api \
+          #--method PUT \
+          #-H "Accept: application/vnd.github+json" \
+          #-H "X-GitHub-Api-Version: 2022-11-28" \
+          #/repos/${{ GITHUB.REPOSITORY }}/actions/secrets/METRICS_TOKEN1 \
+          #-f encrypted_value='c2VjcmV0' \
+          #-f key_id='012345678912345678'
+        
+      - name: Prepare gist as metrics holder
+        #if: steps.is_template.outputs.is_template == 'true'
+        env:
+          GISTTOKEN: ${{ secrets.GIST_SECRET }}
+        run: |
+          echo "Preparing gist with -a(author) ${{ env.REPOSITORY_OWNER }} -n(name) ${{ env.REPOSITORY_NAME }} -u(urlname) ${{ env.REPOSITORY_URLNAME }}"
+          chmod u+x .github/prepare_gist_metrics.sh
           .github/prepare_gist_metrics.sh -a ${{ env.REPOSITORY_OWNER }} -n ${{ env.REPOSITORY_NAME }} -u ${{ env.REPOSITORY_URLNAME }} -d "Awesome ${{ env.REPOSITORY_NAME }} created by ${{ env.REPOSITORY_OWNER }}"
                           
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "✅ Ready to clone and code."
+          commit_message: "✅ Ready to code."
           # commit_options: '--amend --no-edit'
           push_options: --force
