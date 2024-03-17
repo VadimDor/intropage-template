@@ -1,6 +1,12 @@
 
 <h2 align="center"><b>#TODO: write your moto here</b></h2>
 
+<!--  DELETE THE LINES BELOW THIS AFTER THIS TODO IS DONE -->
+#TODO: proceed with creation of TOKENS
+ 
+  On the new repository `settings->secrets` add your `GIST_SECRET`  
+
+<!--  DELETE THE LINES ABOVE THIS AFTER THIS TODO IS DONE -->
 ---
 # project_name
 

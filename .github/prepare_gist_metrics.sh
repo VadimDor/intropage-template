@@ -22,7 +22,7 @@ YOUR_TOKEN=$GISTTOKEN
 echo "YOUR_TOKEN: $YOUR_TOKEN";
 
 
-echo "Preparing gist...  ($github.token)"
+echo "Preparing gist...  $(github.token)"
 
 curl -L \
   -X POST \
@@ -30,13 +30,15 @@ curl -L \
   -H "Authorization: Bearer $YOUR_TOKEN" \
   -H "X-GitHub-Api-Version: 2022-11-28" \
   https://api.github.com/gists \
-  -d '{"description":"Example of a gist","public":false,"files":{"README.md":{"content":"Hello World"}}}'
+  -d '{"description":"Example of a gist","public":false,"files":{"README.md":{"content":"This gist contains metrics pictures"}}}'
   
-gh api \
-  --method PUT \
-  -H "Accept: application/vnd.github+json" \
-  -H "X-GitHub-Api-Version: 2022-11-28" \
-  /repos/$author/$repo_name/actions/secrets/METRICS_TOKEN \
-  -f encrypted_value='c2VjcmV0' \
-  -f key_id='012345678912345678'
-echo "Configured secret METRICS_TOKEN"
+echo "Configured new gist as a container for metrics"
+#gh api \
+#  --method PUT \
+#  -H "Accept: application/vnd.github+json" \
+#  -H "X-GitHub-Api-Version: 2022-11-28" \
+#  /repos/$author/$repo_name/actions/secrets/METRICS_TOKEN \
+#  -f encrypted_value='c2VjcmV0' \
+#  -f key_id='012345678912345678'
+
+#echo "Configured secret METRICS_TOKEN"
