@@ -16,17 +16,15 @@
 
 >  I'm a ...specializing in ... 
  with over ... years of expertise.
-
 > I'm particularly experienced with ...
-
 > I always love to ... 
 
 ![](assets/bottom-wave.svg)
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=author_name&style=flat-square" alt="Profile Visits"> 
+  <img align="center" src="https://komarev.com/ghpvc/?username=author_name&style=flat-square" alt="Profile Visits"> 
   <a href="https://github.com/author_name" target="_blank">
-    <img alt="Follow on GitHub" src="https://img.shields.io/github/followers/author_name?label=Follow&style=social">
+    <img align="center" alt="Follow on GitHub" src="https://img.shields.io/github/followers/author_name?label=Follow&style=flat&logo=x&logoColor=fff&color=grey">
   </a>
   <a href="https://twitter.com/author_name">
     <img align="center" alt="Twitter" src="https://img.shields.io/badge/Follow%20me%20on%20X-informational?style=flat&logo=x&logoColor=fff&color=grey">
@@ -41,6 +39,7 @@
   </a>
 </p>
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%author_name%2Fproject_name.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%author_name%2Fproject_name?ref=badge_shield)
 [![CI](https://github.com/author_name/project_name/actions/workflows/main.yml/badge.svg)](https://github.com/author_name/project_name/actions/workflows/main.yml)
 
 project_description
@@ -74,9 +73,7 @@ project_description
   <img align="center" src="https://wakatime.com/share/@author_name/12345.svg" alt="author_name's WakaTime coding activity" />
 </p>
 
-## 📫 Connect with Me 
-
-## <a href="mailto:author_name@gmail.com" target="blank"><span>Mail to me</span></a>
+## <a href="mailto:author_name@gmail.com" target="blank">📫 Connect with Me</a>
 
 ## 📈 My Activity Graph
 <table width="100%">
@@ -120,7 +117,7 @@ project_description
 
 <!--  My Home -->
  
-My Home: [Here I am](https://geojson.io/#map=6.42/-15.23/167.129)
+My Home: [Here I am](https://geojson.io/#map=1.42/-15.23/167.129)
 
 ```geojson
 {
@@ -161,6 +158,8 @@ My Home: [Here I am](https://geojson.io/#map=6.42/-15.23/167.129)
 }
 ```
 
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%author_name%2Fproject_name.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%author_name%2Fproject_name?ref=badge_large)
 <!-- Resources -->
 <!-- Icons: https://simpleicons.org/ -->
 <!-- GitHub Stats: https://github.com/anuraghazra/github-readme-stats -->
