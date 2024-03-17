@@ -30,7 +30,8 @@ do
     echo "Renamed $filename"
 done
 
-mv project_name $name
+# mv project_name $name
+cp -f README-template.md  README.md
 
 # This command runs only once on GHA!
 rm -rf .github/template.yml
