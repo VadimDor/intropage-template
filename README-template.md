@@ -1,6 +1,5 @@
 
-# Introduction GH page Template
-
+<h2 align="center"><b>#TODO: write your moto here</b></h2>
 
 ---
 # project_name
@@ -10,3 +9,11 @@
 
 project_description
  
+<div align="center">
+    <a href="https://github.com/author_name">
+        <img width="200" height="200" src="./assets/profile.png"></img>
+    </a>
+</div>
+ 
+
+<h2 align="center"><b>Metrics</b></h2>
