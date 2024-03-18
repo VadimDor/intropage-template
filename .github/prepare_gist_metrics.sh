@@ -43,12 +43,13 @@ else
       https://api.github.com/gists \
       -d '{"description":"'"$gist_magic_desc"'","public":false,"files":{"README.md":{"content":"'"$gist_magic_desc"'"}}}')
 
+    # shellcheck disable=SC2181
     if [ $? -ne 0 ] ; then
        echo "Could not create GIST. Create first token GIST_SECRET with appropriate permitions. Error executing CURL: $m"
        exit 4
     else   
        echo "Configured new GIST as a container for metrics"  
        echo "Output from CURL: $m"
-       echo $m | jq '.url'
+       echo "$m" | jq '.url'
     fi     
 fi
