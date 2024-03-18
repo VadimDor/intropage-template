@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-while getopts a:n:u:d: flag
+while getopts a:n:u:d:g: flag
 do
     # shellcheck disable=SC2220
     case "${flag}" in
@@ -7,6 +7,7 @@ do
         n) name=${OPTARG};;
         u) urlname=${OPTARG};;
         d) description=${OPTARG};;
+        g) gist_magic_desc=${OPTARG};;
     esac
 done
 
@@ -23,23 +24,31 @@ YOUR_TOKEN=$GISTTOKEN
 echo "YOUR_TOKEN: $YOUR_TOKEN";
 
 
-echo "Preparing gist...  $(github.token)"
+echo "Preparing gist..."
 
-curl -L \
-  -X POST \
+msg="test highlight1"
+if [[ $(curl -L \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer $YOUR_TOKEN" \
   -H "X-GitHub-Api-Version: 2022-11-28" \
-  https://api.github.com/gists \
-  -d '{"description":"Example of a gist","public":false,"files":{"README.md":{"content":"This gist contains metrics pictures"}}}'
-  
-echo "Configured new gist as a container for metrics"
-#gh api \
-#  --method PUT \
-#  -H "Accept: application/vnd.github+json" \
-#  -H "X-GitHub-Api-Version: 2022-11-28" \
-#  /repos/$author/$repo_name/actions/secrets/METRICS_TOKEN \
-#  -f encrypted_value='c2VjcmV0' \
-#  -f key_id='012345678912345678'
+  https://api.github.com/gists | jq '.[].description') = *\"$msg\"* ]]; then
+    echo "Found GIST with description '$msg'. Nothing to do."
+else
+    echo "GIST for holding of generated github statistic images not found. Trying to create.."
+    m=$(curl -L --fail  \
+      -X POST \
+      -H "Accept: application/vnd.github+json" \
+      -H "Authorization: Bearer $YOUR_TOKEN" \
+      -H "X-GitHub-Api-Version: 2022-11-28" \
+      https://api.github.com/gists \
+      -d '{"description":"'"$gist_magic_desc"'","public":false,"files":{"README.md":{"content":"'"$gist_magic_desc"'"}}}')
 
-#echo "Configured secret METRICS_TOKEN"
+    if [ $? -ne 0 ] ; then
+       echo "Could not create GIST. Create first token GIST_SECRET with appropriate permitions. Error executing CURL: $m"
+       exit 4
+    else   
+       echo "Configured new GIST as a container for metrics"  
+       echo "Output from CURL: $m"
+       echo $m | jq '.url'
+    fi     
+fi
