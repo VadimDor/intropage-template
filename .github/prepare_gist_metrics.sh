@@ -50,6 +50,13 @@ else
     else   
        echo "Configured new GIST as a container for metrics"  
        echo "Output from CURL: $m"
-       echo "$m" | jq '.id'
+       committer_gist_id=$(echo "$m" | jq '.id')
+       echo $committer_gist_id
+       original_gist_id="committer_gist_id"
+       for filename in $(git ls-files) 
+        do
+            sed -i "s/$original_gist_id/$committer_gist_id/g" "$filename"
+            echo "Substituted in $filename"
+        done
     fi     
 fi
