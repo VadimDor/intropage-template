@@ -103,7 +103,7 @@ project_description
 <div align="center">
   <summary>Stat: Github Metrics</summary>
   <a href="https://github.com/author_name/author_name/">
-    <img src="https://gist.githubusercontent.com/author_name/18c656e56b86c137ed45ab71b9227ad6/raw/github-metrics.svg" alt="author_name's GitHub Metrics">
+    <img src="https://gist.githubusercontent.com/author_name/committer_gist_id/raw/github-metrics-project_urlname.svg" alt="author_name's GitHub Metrics">
   </a>
 </div>
 
