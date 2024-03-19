@@ -1,18 +1,26 @@
+<h2 align="center"><b>Jack of all trades, master of a few</b></h2>
+<p align="center"><sub>#TODO:</sub><sup>change your moto ^^^</sup></p>
 <!--  DELETE THE LINES BELOW THIS AFTER THIS TODO IS DONE -->
-#TODO: proceed with creation of TOKENS
- 
-  On the new repository `settings->secrets` add your `GIST_SECRET`  
-
+<details close><summary><sub> #TODO:</sub> <sup>proceed with creation of TOKENS</sup><sub>vvv-- CLICK HERE TO OPEN INSTRUCTIONS SECTION --vvv</sub></summary>
+  
+  DELETE THE LINES BELOW THIS AFTER THIS TODO IS DONE
+  
+  <img alt="" width="400" src="https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.isocalendar.fullyear.svg" alt=""></img>
+  
+   On the new repository `settings->secrets` add your `GIST_SECRET` 
+   
+ </details>
 <!--  DELETE THE LINES ABOVE THIS AFTER THIS TODO IS DONE -->
 ---
-![](assets/top-welcome.svg)
-<h2 align="center"><b>#TODO: write your moto here</b></h2>
+<img width="100%" src="assets/top-welcome.svg"></img>
+
 # Hi there, I'm [author_name](https://github.com/author_name/)! <img src="assets/wave.gif" width="30px">
 
->  I'm a ...specializing in ... 
- with over ... years of expertise.
+>  I'm a ...specializing in ...  with over ... years of expertise.
+
 > I'm particularly experienced with ...
-> I always love to ... 
+
+> I always love to ...
 
 ![](assets/bottom-wave.svg)
 
@@ -34,8 +42,6 @@
   </a>
 </p>
 
-project_description
- 
 <div align="center">
     <a href="https://github.com/author_name">
         <img width="200" height="200" src="./assets/profile.png"></img>
@@ -55,17 +61,15 @@ project_description
 
 ## 📌 Pinned Repositories
 
-[![Pin GitHub Repo, row 1, col 1](https://github-readme-stats.vercel.app/api/pin/?username=author_name&repo=project_name&theme=transparent)](https://github.com/author_name/project_name) [![Pin GitHub Repo, row 1, col 2](https://github-readme-stats.vercel.app/api/pin/?username=author_name&repo=project_name&theme=transparent)](https://github.com/author_name/project_name)
+[![Pin GitHub Repo, row 1, col 1](https://github-readme-stats.vercel.app/api/pin/?username=author_name&repo=project_urlname&theme=transparent)](https://github.com/author_name/project_urlname) [![Pin GitHub Repo, row 1, col 2](https://github-readme-stats.vercel.app/api/pin/?username=author_name&repo=project_urlname&theme=transparent)](https://github.com/author_name/project_urlname)
 
-## WakaTime Activity
+## ⏰ WakaTime Activity
 
 <img src="https://wakatime.com/badge/user/12345.svg"/>
 
 <p align="center">
   <img align="center" src="https://wakatime.com/share/@author_name/12345.svg" alt="author_name's WakaTime coding activity" />
 </p>
-
-## <a href="mailto:author_name@gmail.com" target="blank">📫 Connect with Me</a>
 
 ## 📈 My Activity Graph
 <table width="100%">
@@ -98,48 +102,49 @@ project_description
   <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=author_name&no-bg=true"></a>
 </div>
 
-<h2 align="center"><b>Metrics</b></h2>
+<h2 align="center"><b>📊 Metrics</b></h2>
 
 <div align="center">
   <summary>Stat: Github Metrics</summary>
   <a href="https://github.com/author_name/author_name/">
-    <img src="https://gist.githubusercontent.com/author_name/committer_gist_id/raw/github-metrics-project_urlname.svg" alt="author_name's GitHub Metrics">
+    <img src="https://gist.githubusercontent.com/author_name/efedf3c3dc5c472c3103caaa15db68a0/raw/github-metrics-project_urlname.svg" alt="author_name's GitHub Metrics">
   </a>
 </div>
 
-<!--  My Home -->
- 
-My Home: [Here I am](https://geojson.io/#map=1.42/-15.23/167.129)
+## 📫 Connect with <a href="mailto:author_name@gmail.com" target="blank">Me 📧</a>
 
+[🌴 Here 🌏](https://geojson.io/#map=1.98/-22.18/164.68) I am
 ```geojson
 {
   "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "Here": "I am"
+      },
       "geometry": {
         "coordinates": [
           [
             [
-              167.138,
-              -15.225
+              160.3788204607913,
+              -12.809666431886669
             ],
             [
-              167.118,
-              -15.21
+              160.3788204607913,
+              -24.92289782264521
             ],
             [
-              167.148,
-              -15.21
+              176.84150345357,
+              -24.92289782264521
             ],
             [
-              167.148,
-              -15.25
+              176.84150345357,
+              -12.809666431886669
             ],
             [
-              167.118,
-              -15.26
+              160.3788204607913,
+              -12.809666431886669
             ]
           ]
         ],
@@ -149,7 +154,6 @@ My Home: [Here I am](https://geojson.io/#map=1.42/-15.23/167.129)
   ]
 }
 ```
-
 
 <!-- Resources -->
 <!-- Icons: https://simpleicons.org/ -->
